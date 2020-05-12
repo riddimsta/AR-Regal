@@ -89,11 +89,11 @@ function initialize() {
     // build markerControls
 
 
-    let glbArray = ["assets/luft.glb", "assets/mahnmal.glb", "assets/mauerreste.glb", "assets/kinder.glb", "assets/weg.glb"];
+    let glbArray = ["assets/model/luft.glb", "assets/model/mahnmal.glb", "assets/model/mauerreste.glb", "assets/model/kinder.glb", "assets/model/weg.glb"];
 
-    let patternArray = ["kanji", "hiro"];
+    let patternArray = ["assets/marker/luft", "assets/marker/mahnmal", "assets/marker/mauerreste", "assets/marker/kinder", "assets/marker/weg"];
 
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 3; i++) {
         let markerRoot = new THREE.Group();
         scene.add(markerRoot);
         let markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
