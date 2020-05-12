@@ -1,0 +1,18 @@
+#lidicelogo {
+    position: relative;
+    z-index: 15;
+    background-color: #02161f;
+    height: 5%;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-top: 1%;
+
+}
+
+#video-container {
+    width: 100vh;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
