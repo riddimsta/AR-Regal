@@ -104,7 +104,8 @@ function initialize() {
                 //child.layers.set(2);
             });*/
             o3.position.y = -5;
-            o3.position.z = 2;
+            o3.position.z = 3;
+        o3.position.x = 0.5;
 
         o3.rotation.x = -Math.PI/2;
             o3.scale.set(2,2,2);
