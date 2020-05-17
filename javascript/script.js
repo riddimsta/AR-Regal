@@ -90,131 +90,162 @@ function initialize() {
     let markerRoot = new THREE.Group();
     scene.add(markerRoot);
     let markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
-        type: 'pattern', patternUrl: "assets/marker/pattern-luft.patt"
+        type: 'pattern', patternUrl: "assets/marker/pattern-weg (2).patt"
     });
 
     var glbLoader = new THREE.GLTFLoader();
-    glbLoader.load("assets/model/luft1.glb", function (gltf) {
+    glbLoader.load("assets/model/weg.glb", function (gltf) {
 
-            o3 = gltf.scene;
+            var model = gltf.scene;
             /*                    o3.traverse(function (child) {
                 if (child.isMesh)
                    // child.material = faceMaterial;
                 console.log(child.name);
                 //child.layers.set(2);
             });*/
-            o3.position.y = -5;
-            o3.position.z = 3;
-        o3.position.x = 0.5;
+            model.position.y = -5;
+            model.position.z = 3;
+            model.position.x = 0.5;
 
-        o3.rotation.x = -Math.PI/2;
-            o3.scale.set(2,2,2);
-            markerRoot.add(o3);
+            model.rotation.x = -Math.PI / 2;
+            model.scale.set(2, 2, 2);
+            markerRoot.add(model);
         }
     );
 
     let markerRoot1 = new THREE.Group();
     scene.add(markerRoot1);
     let markerControls1 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot1, {
-        type: 'pattern', patternUrl: "assets/marker/pattern-FotoKinderSkulpturLidice1.patt"
+        type: 'pattern', patternUrl: "assets/marker/pattern-luft (1).patt"
     });
 
     var glbLoader1 = new THREE.GLTFLoader();
-    glbLoader1.load("assets/model/kinder.glb", function (gltf) {
+    glbLoader1.load("assets/model/luft.glb", function (gltf) {
 
-            o4 = gltf.scene;
+            var model = gltf.scene;
             /*                    o3.traverse(function (child) {
                 if (child.isMesh)
                    // child.material = faceMaterial;
                 console.log(child.name);
                 //child.layers.set(2);
             });*/
-            o4.position.y = -5;
+            model.position.y = -5;
+            model.position.z = 3;
+            model.position.x = 0.5;
 
-        o4.scale.set(1.5, 1.5, 1.5);
-            markerRoot1.add(o4);
+            model.rotation.x = -Math.PI / 2;
+            model.scale.set(2, 2, 2);
+            markerRoot1.add(model);
         }
     );
 
     let markerRoot2 = new THREE.Group();
     scene.add(markerRoot2);
     let markerControls2 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot2, {
-        type: 'pattern', patternUrl: "assets/marker/pattern-lidice_heute (2).patt"
+        type: 'pattern', patternUrl: "assets/marker/pattern-mahnmal (2).patt"
     });
 
     var glbLoader2 = new THREE.GLTFLoader();
-    glbLoader2.load("assets/model/weg.glb", function (gltf) {
+    glbLoader2.load("assets/model/mahnmal.glb", function (gltf) {
 
-            o5 = gltf.scene;
+            var model = gltf.scene;
             /*                    o3.traverse(function (child) {
                 if (child.isMesh)
                    // child.material = faceMaterial;
                 console.log(child.name);
                 //child.layers.set(2);
             });*/
-            o5.position.y = -5;
-        //o5.rotation.y = -Math.PI;
+            model.position.y = -5;
+            model.position.z = 3;
+            model.position.x = 0.5;
 
-        o5.scale.set(1.5, 1.5, 1.5);
-            markerRoot2.add(o5);
+            model.rotation.x = -Math.PI / 2;
+            model.scale.set(2, 2, 2);
+            markerRoot2.add(model);
         }
     );
 
     let markerRoot3 = new THREE.Group();
     scene.add(markerRoot3);
     let markerControls3 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot3, {
-        type: 'pattern', patternUrl: "assets/marker/pattern-mauerreste.patt"
+        type: 'pattern', patternUrl: "assets/marker/pattern-kinder.patt"
     });
 
     var glbLoader3 = new THREE.GLTFLoader();
-    glbLoader3.load("assets/model/mauerreste.glb", function (gltf) {
+    glbLoader3.load("assets/model/kinder.glb", function (gltf) {
 
-            o6 = gltf.scene;
+            var model = gltf.scene;
             /*                    o3.traverse(function (child) {
                 if (child.isMesh)
                    // child.material = faceMaterial;
                 console.log(child.name);
                 //child.layers.set(2);
             });*/
-            o6.position.y = -5;
-            //o5.rotation.y = -Math.PI;
+            model.position.y = -5;
+            model.position.z = 3;
+            model.position.x = 0.5;
 
-            o6.scale.set(1.5, 1.5, 1.5);
-            markerRoot3.add(o6);
+            model.rotation.x = -Math.PI / 2;
+            model.scale.set(2, 2, 2);
+            markerRoot3.add(model);
         }
     );
 
+    let markerRoot4 = new THREE.Group();
+    scene.add(markerRoot4);
+    let markerControls4 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot4, {
+        type: 'pattern', patternUrl: "assets/marker/pattern-mauerreste (2).patt"
+    });
 
-   /* let glbArray = ["assets/model/weg", "assets/model/kinder", "assets/model/mauerreste"];
+    var glbLoader4 = new THREE.GLTFLoader();
+    glbLoader4.load("assets/model/mauerreste.glb", function (gltf) {
 
-    let patternArray = ["assets/marker/pattern-weg", "assets/marker/pattern-FotoKinderSkulpturLidice1", "assets/marker/pattern-mauerreste"];
+            var model = gltf.scene;
+            /*                    o3.traverse(function (child) {
+                if (child.isMesh)
+                   // child.material = faceMaterial;
+                console.log(child.name);
+                //child.layers.set(2);
+            });*/
+            model.position.y = -5;
+            model.position.z = 3;
+            model.position.x = 0.5;
 
-    for (let i = 0; i < 2; i++) {
-        let markerRoot = new THREE.Group();
-        scene.add(markerRoot);
-        let markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
-            type: 'pattern', patternUrl: patternArray[i] + ".patt",
-        });
+            model.rotation.x = -Math.PI / 2;
+            model.scale.set(2, 2, 2);
+            markerRoot4.add(model);
+        }
+    );
 
-        var glbLoader1 = new THREE.GLTFLoader();
-        glbLoader1.load(glbArray[i] + ".glb", function (gltf) {
+    /* let glbArray = ["assets/model/weg", "assets/model/kinder", "assets/model/mauerreste"];
 
-                o3 = gltf.scene;
-                /!*                    o3.traverse(function (child) {
-                    if (child.isMesh)
-                       // child.material = faceMaterial;
-                    console.log(child.name);
-                    //child.layers.set(2);
-                });*!/
-                o3.position.y = -5;
-                o3.scale.set(1.5, 1.5, 1.5);
-                markerRoot.add(o3);
-            }
-        );*/
+     let patternArray = ["assets/marker/pattern-weg", "assets/marker/pattern-FotoKinderSkulpturLidice1", "assets/marker/pattern-mauerreste"];
+
+     for (let i = 0; i < 2; i++) {
+         let markerRoot = new THREE.Group();
+         scene.add(markerRoot);
+         let markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
+             type: 'pattern', patternUrl: patternArray[i] + ".patt",
+         });
+
+         var glbLoader1 = new THREE.GLTFLoader();
+         glbLoader1.load(glbArray[i] + ".glb", function (gltf) {
+
+                 o3 = gltf.scene;
+                 /!*                    o3.traverse(function (child) {
+                     if (child.isMesh)
+                        // child.material = faceMaterial;
+                     console.log(child.name);
+                     //child.layers.set(2);
+                 });*!/
+                 o3.position.y = -5;
+                 o3.scale.set(1.5, 1.5, 1.5);
+                 markerRoot.add(o3);
+             }
+         );*/
 
 
-
-    }
+}
 
 
 function update() {
