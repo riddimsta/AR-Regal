@@ -194,7 +194,7 @@ function initialize() {
     let markerRoot4 = new THREE.Group();
     scene.add(markerRoot4);
     let markerControls4 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot4, {
-        type: 'pattern', patternUrl: "assets/marker/pattern-mauerreste (2).patt"
+        type: 'pattern', patternUrl: "assets/marker/pattern-mauerreste (3).patt"
     });
 
     var glbLoader4 = new THREE.GLTFLoader();
