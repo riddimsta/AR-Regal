@@ -101,6 +101,16 @@ function initialize() {
         smoothThreshold: 2,
     });
 
+    let smoothedRoot = new THREE.Group();
+    scene.add(smoothedRoot);
+    smoothedControls = new THREEx.ArSmoothedControls(smoothedRoot, {
+        lerpPosition: 0.5,
+        lerpQuaternion: 0.5,
+        lerpScale: 1,
+        // minVisibleDelay: 1,
+        // minUnvisibleDelay: 1,
+    });
+
     var glbLoader = new THREE.GLTFLoader();
     glbLoader.load("assets/model/weg.glb", function (gltf) {
 
@@ -117,7 +127,8 @@ function initialize() {
 
             model.rotation.x = -Math.PI / 2;
             model.scale.set(2, 2, 2);
-            markerRoot.add(model);
+            //markerRoot.add(model);
+            smoothedRoot.add(model);
         }
     );
 
@@ -297,6 +308,9 @@ function update() {
     // update artoolkit on every frame
     if (arToolkitSource.ready !== false)
         arToolkitContext.update(arToolkitSource.domElement);
+
+    smoothedControls.update(markerRoot);
+
 }
 
 function render() {
