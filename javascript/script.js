@@ -91,7 +91,7 @@ function initialize() {
     scene.add(markerRoot);
     let markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
         type: 'pattern',
-        patternUrl: "assets/marker/pattern-weg (2).patt",
+        patternUrl: "assets/marker/pattern-weg.patt",
         smooth: true,
         // number of matrices to smooth tracking over, more = smoother but slower follow
         smoothCount: 20,
@@ -122,7 +122,7 @@ function initialize() {
                 //child.layers.set(2);
             });*/
             model.position.y = -5;
-            model.position.z = 3;
+            model.position.z = 5;
             model.position.x = 0.5;
 
             model.rotation.x = -Math.PI / 2;
@@ -136,7 +136,7 @@ function initialize() {
     scene.add(markerRoot1);
     let markerControls1 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot1, {
         type: 'pattern',
-        patternUrl: "assets/marker/pattern-luft (1).patt",
+        patternUrl: "assets/marker/pattern-luft.patt",
         smooth: true,
         // number of matrices to smooth tracking over, more = smoother but slower follow
         smoothCount: 15,
@@ -157,7 +157,7 @@ function initialize() {
                 //child.layers.set(2);
             });*/
             model.position.y = -5;
-            model.position.z = 3;
+            model.position.z = 5;
             model.position.x = 0.5;
 
             model.rotation.x = -Math.PI / 2;
@@ -171,7 +171,7 @@ function initialize() {
     scene.add(markerRoot2);
     let markerControls2 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot2, {
         type: 'pattern',
-        patternUrl: "assets/marker/pattern-mahnmal (2).patt",
+        patternUrl: "assets/marker/pattern-mahnmal.patt",
         smooth: true,
         // number of matrices to smooth tracking over, more = smoother but slower follow
         smoothCount: 15,
@@ -192,7 +192,7 @@ function initialize() {
                 //child.layers.set(2);
             });*/
             model.position.y = -5;
-            model.position.z = 3;
+            model.position.z = 5;
             model.position.x = 0.5;
 
             model.rotation.x = -Math.PI / 2;
@@ -227,7 +227,7 @@ function initialize() {
                 //child.layers.set(2);
             });*/
             model.position.y = -5;
-            model.position.z = 2;
+            model.position.z = 5;
             model.position.x = 0.5;
 
             model.rotation.x = -Math.PI / 2;
@@ -241,7 +241,7 @@ function initialize() {
     scene.add(markerRoot4);
     let markerControls4 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot4, {
         type: 'pattern',
-        patternUrl: "assets/marker/pattern-mauerreste (3).patt",
+        patternUrl: "assets/marker/pattern-mauerreste.patt",
         smooth: true,
         // number of matrices to smooth tracking over, more = smoother but slower follow
         smoothCount: 15,
@@ -262,7 +262,7 @@ function initialize() {
                 //child.layers.set(2);
             });*/
             model.position.y = -5;
-            model.position.z = 3;
+            model.position.z = 5;
             model.position.x = 0.5;
 
             model.rotation.x = -Math.PI / 2;
