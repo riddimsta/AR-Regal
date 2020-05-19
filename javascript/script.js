@@ -92,13 +92,7 @@ function initialize() {
     let markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
         type: 'pattern',
         patternUrl: "assets/marker/pattern-weg.patt",
-        smooth: true,
-        // number of matrices to smooth tracking over, more = smoother but slower follow
-        smoothCount: 20,
-        // distance tolerance for smoothing, if smoothThreshold # of matrices are under tolerance, tracking will stay still
-        smoothTolerance: 0.01,
-        // threshold for smoothing, will keep still unless enough matrices are over tolerance
-        smoothThreshold: 2,
+
     });
 
     let smoothedRoot = new THREE.Group();
@@ -137,13 +131,7 @@ function initialize() {
     let markerControls1 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot1, {
         type: 'pattern',
         patternUrl: "assets/marker/pattern-luft.patt",
-        smooth: true,
-        // number of matrices to smooth tracking over, more = smoother but slower follow
-        smoothCount: 15,
-        // distance tolerance for smoothing, if smoothThreshold # of matrices are under tolerance, tracking will stay still
-        smoothTolerance: 0.01,
-        // threshold for smoothing, will keep still unless enough matrices are over tolerance
-        smoothThreshold: 2,
+
     });
 
     var glbLoader1 = new THREE.GLTFLoader();
@@ -172,13 +160,7 @@ function initialize() {
     let markerControls2 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot2, {
         type: 'pattern',
         patternUrl: "assets/marker/pattern-mahnmal.patt",
-        smooth: true,
-        // number of matrices to smooth tracking over, more = smoother but slower follow
-        smoothCount: 15,
-        // distance tolerance for smoothing, if smoothThreshold # of matrices are under tolerance, tracking will stay still
-        smoothTolerance: 0.01,
-        // threshold for smoothing, will keep still unless enough matrices are over tolerance
-        smoothThreshold: 2,
+
     });
 
     var glbLoader2 = new THREE.GLTFLoader();
@@ -207,13 +189,7 @@ function initialize() {
     let markerControls3 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot3, {
         type: 'pattern',
         patternUrl: "assets/marker/pattern-kinder.patt",
-        smooth: true,
-        // number of matrices to smooth tracking over, more = smoother but slower follow
-        smoothCount: 15,
-        // distance tolerance for smoothing, if smoothThreshold # of matrices are under tolerance, tracking will stay still
-        smoothTolerance: 0.01,
-        // threshold for smoothing, will keep still unless enough matrices are over tolerance
-        smoothThreshold: 2,
+
     });
 
     var glbLoader3 = new THREE.GLTFLoader();
@@ -242,13 +218,7 @@ function initialize() {
     let markerControls4 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot4, {
         type: 'pattern',
         patternUrl: "assets/marker/pattern-mauerreste.patt",
-        smooth: true,
-        // number of matrices to smooth tracking over, more = smoother but slower follow
-        smoothCount: 15,
-        // distance tolerance for smoothing, if smoothThreshold # of matrices are under tolerance, tracking will stay still
-        smoothTolerance: 0.01,
-        // threshold for smoothing, will keep still unless enough matrices are over tolerance
-        smoothThreshold: 2,
+
     });
 
     var glbLoader4 = new THREE.GLTFLoader();
