@@ -203,7 +203,7 @@ function initialize() {
                 //child.layers.set(2);
             });*/
             model.position.y = -5;
-            model.position.z = 2;
+            model.position.z = 3;
             model.position.x = 0.5;
 
             model.rotation.x = -Math.PI / 2;
