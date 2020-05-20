@@ -159,7 +159,7 @@ function initialize() {
     scene.add(markerRoot2);
     let markerControls2 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot2, {
         type: 'pattern',
-        patternUrl: "assets/marker/pattern-mahnmal.patt",
+        patternUrl: "assets/marker/pattern-mahnmal_neu.patt",
 
     });
 
@@ -203,7 +203,7 @@ function initialize() {
                 //child.layers.set(2);
             });*/
             model.position.y = -5;
-            model.position.z = 5;
+            model.position.z = 2;
             model.position.x = 0.5;
 
             model.rotation.x = -Math.PI / 2;
