@@ -98,11 +98,9 @@ function initialize() {
     let smoothedRoot = new THREE.Group();
     scene.add(smoothedRoot);
     smoothedControls = new THREEx.ArSmoothedControls(smoothedRoot, {
-        lerpPosition: 0.1,
-        lerpQuaternion: 0.1,
+        lerpPosition: 0.07,
+        lerpQuaternion: 0.07,
         lerpScale: 1,
-        // minVisibleDelay: 1,
-        // minUnvisibleDelay: 1,
     });
 
     var glbLoader = new THREE.GLTFLoader();
@@ -134,6 +132,14 @@ function initialize() {
 
     });
 
+    let smoothedRoot1 = new THREE.Group();
+    scene.add(smoothedRoot1);
+    smoothedControls1 = new THREEx.ArSmoothedControls(smoothedRoot1, {
+        lerpPosition: 0.07,
+        lerpQuaternion: 0.07,
+        lerpScale: 1,
+    });
+
     var glbLoader1 = new THREE.GLTFLoader();
     glbLoader1.load("assets/model/luft.glb", function (gltf) {
 
@@ -150,7 +156,9 @@ function initialize() {
 
             model.rotation.x = -Math.PI / 2;
             model.scale.set(2, 2, 2);
-            markerRoot1.add(model);
+            //markerRoot1.add(model);
+            smoothedRoot1.add(model);
+
 
         }
     );
@@ -161,6 +169,14 @@ function initialize() {
         type: 'pattern',
         patternUrl: "assets/marker/pattern-mahnmal_neu.patt",
 
+    });
+
+    let smoothedRoot2 = new THREE.Group();
+    scene.add(smoothedRoot2);
+    smoothedControls2 = new THREEx.ArSmoothedControls(smoothedRoot2, {
+        lerpPosition: 0.07,
+        lerpQuaternion: 0.07,
+        lerpScale: 1,
     });
 
     var glbLoader2 = new THREE.GLTFLoader();
@@ -179,7 +195,8 @@ function initialize() {
 
             model.rotation.x = -Math.PI / 2;
             model.scale.set(2, 2, 2);
-            markerRoot2.add(model);
+            //markerRoot2.add(model);
+            smoothedRoot2.add(model);
 
         }
     );
@@ -190,6 +207,14 @@ function initialize() {
         type: 'pattern',
         patternUrl: "assets/marker/pattern-kinder.patt",
 
+    });
+
+    let smoothedRoot3 = new THREE.Group();
+    scene.add(smoothedRoot3);
+    smoothedControls3 = new THREEx.ArSmoothedControls(smoothedRoot3, {
+        lerpPosition: 0.07,
+        lerpQuaternion: 0.07,
+        lerpScale: 1,
     });
 
     var glbLoader3 = new THREE.GLTFLoader();
@@ -208,7 +233,8 @@ function initialize() {
 
             model.rotation.x = -Math.PI / 2;
             model.scale.set(2, 2, 2);
-            markerRoot3.add(model);
+            //markerRoot3.add(model);
+            smoothedRoot3.add(model);
 
         }
     );
@@ -219,6 +245,14 @@ function initialize() {
         type: 'pattern',
         patternUrl: "assets/marker/pattern-mauerreste.patt",
 
+    });
+
+    let smoothedRoot4 = new THREE.Group();
+    scene.add(smoothedRoot4);
+    smoothedControls4 = new THREEx.ArSmoothedControls(smoothedRoot4, {
+        lerpPosition: 0.07,
+        lerpQuaternion: 0.07,
+        lerpScale: 1,
     });
 
     var glbLoader4 = new THREE.GLTFLoader();
@@ -237,7 +271,8 @@ function initialize() {
 
             model.rotation.x = -Math.PI / 2;
             model.scale.set(2, 2, 2);
-            markerRoot4.add(model);
+            // markerRoot4.add(model);
+            smoothedRoot4.add(model);
 
         }
     );
@@ -280,6 +315,11 @@ function update() {
         arToolkitContext.update(arToolkitSource.domElement);
 
     smoothedControls.update(markerRoot);
+    smoothedControls1.update(markerRoot1);
+    smoothedControls2.update(markerRoot2);
+    smoothedControls3.update(markerRoot3);
+    smoothedControls4.update(markerRoot4);
+
 
 }
 
